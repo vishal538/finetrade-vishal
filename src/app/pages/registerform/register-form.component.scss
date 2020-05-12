@@ -1,0 +1,85 @@
+nb-card-body {
+    overflow: visible;
+    padding-top: 0;
+  
+    > * {
+      margin-top: 1rem;
+    }
+  }
+  .example-full-width {
+    display: flex;
+    flex-flow: row wrap;
+}
+.example{
+  display: flex;
+  flex-flow: row wrap;
+}
+.full-name-inputs{
+  display: flex;
+  flex-flow: row wrap;
+}
+.child3{
+  margin-top: 0.5rem;
+  width: 1rem;
+}
+.child4{
+  margin-left: 5.5rem;
+  width: 12.5rem;
+}
+@media only screen and (max-width: 400px) {
+  .child4 {
+    margin-left: 0.8rem;
+    width: 16rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .child3 {
+    margin-top: 0.5rem;
+    width: 16.9rem;
+  }
+}
+input.ng-touched.ng-invalid{
+  border: 1px solid red;
+  box-shadow:  0 0 13px inset rgba(225, 0, 0, 0.2);
+}
+
+  input{
+    margin: 12px;
+  }
+  .nb{
+   padding: 13px!important;
+  }
+  .parents{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .child1{
+    width: 40rem;
+  }
+ .child2{
+   width: 13.4;
+ }
+ .example-full{
+   display: flex;
+   flex-flow: row wrap;
+ }
+  
+  nb-select{
+    padding: 5px 10px!important;
+    cursor: pointer!important;
+    position: relative!important;
+    width: 19.8rem;
+  }
+  nb-select.ng-touched.ng-invalid{
+   border: 1px solid red;
+ 
+  }
+  .btn{
+    margin-top: 0.4rem;
+  }
+  .child{
+    width: 18.6rem;
+  }
+ 
+
+ 

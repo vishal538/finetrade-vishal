@@ -1,0 +1,30 @@
+.card-row {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+.card-col {
+  flex: 1 0 calc(33.3% - 1rem);
+  margin: 0 0.5rem;
+}
+.card-row1 {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+.card-col1 {
+  flex: 1 0 calc(50% - 1rem);
+  margin: 0 0.5rem;
+}
+.span{
+  display: flex;
+  align-items: baseline;
+  
+}
+.head{
+    text-align: right;
+}
+:host {
+  display: block;
+  max-height: 25rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

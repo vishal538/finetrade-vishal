@@ -1,0 +1,86 @@
+<div class="parent">
+    <nb-card class="card">
+        <nb-card-header class="parent2">
+            <div class="head">
+            My cart
+            </div>
+<!--             <div>
+                <p class="text">	&#xf3c5;Deliver to</p>
+            </div>
+            <div>
+                <nb-select  filled status="white" class="drop" placeholder="Select Showcase">
+                    <nb-option value="">Option empty</nb-option>
+                    <nb-option value="0">Option 0</nb-option>
+                    <nb-option value="1">Option 1</nb-option>
+                    <nb-option value="2">Option 2</nb-option>
+                    <nb-option value="3">Option 3</nb-option>
+                    <nb-option value="4">Option 4</nb-option>
+                </nb-select>
+            </div> -->
+        </nb-card-header>
+        <nb-card-body *ngFor="let mypro of products">
+            <div class="child3">
+                <div>
+                    <img class="icon" src={{mypro.Img}}>
+                    <div class="bttn">
+                        <!-- <button class="btn" (click)="decrement(mypro)">-</button>
+                        <input [(ngModel)]="mypro.count"/>
+                        <button class="btn" (click)="increment(mypro)">+</button> -->
+                    </div>
+                </div>
+                <div>
+                    <p class="name">{{mypro.Name}}<br>{{mypro.Quantity}}
+                    </p>
+                    
+                    <p class="amount">{{mypro.Seller}}</p>
+                    <p class="price">&#x20B9;98 &nbsp; 
+                        <del>&#8377;120</del> &nbsp;
+                        <span>18% Off</span></p>
+                    <button  class="save">{{mypro.Save}}</button>
+                    <button class="remove">{{mypro.Remove}}</button>
+                </div>
+                <div>
+<!--                     <p class="set">{{mypro.Delivery}} | <span>Free</span> <del>&#8377;40</del></p> -->
+                </div>
+            </div>
+        </nb-card-body>
+        <nb-card-footer>
+            <button class="placeorder" type="submit" nbButton status="warning" routerLink="./placeOrder">Place Order</button>
+        </nb-card-footer>
+    </nb-card>
+    <div class="card-col">
+        <nb-card >
+            <nb-card-header class="details">PRICE DETAILS</nb-card-header>
+            <nb-card-body class="foot">
+                <div class="child">
+                    <div>
+                        <ul>
+                            <li>Price(1 items)</li>
+                            <!-- <li>Delivery Fee</li> -->
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>Rs. 758</li>
+                            <!-- <span>Free</span> -->
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="child2">
+                    <div>
+                        <p class="amt">Total Amount</p>
+                    </div>
+                    <div>
+                        <p class="total">Rs. 758</p>
+                    </div>
+                </div>
+                <hr>
+                <div >
+                   <span>You will save Rs. 42 on this order</span>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+

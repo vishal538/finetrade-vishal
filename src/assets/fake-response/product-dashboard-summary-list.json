@@ -1,0 +1,98 @@
+[
+    {
+
+        "productDesc": "PVC Pipes",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product1.jpg"
+    
+        ],
+    
+        "quantity": "5000"
+    
+      },
+    
+      {
+    
+        "productDesc": "Handle Bars",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product2.jpg"
+    
+        ],
+    
+        "quantity": "2000"
+    
+      },
+    
+      {
+    
+        "productDesc": "Nuts",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product3.jpeg"
+    
+        ],
+    
+        "quantity": "30000"
+    
+      },
+    
+      {
+    
+        "productDesc": "Windshield",
+    
+        "imageUrls": [
+    
+         "/assets/fakeAssets/product4.jpg"
+    
+        ],
+    
+        "quantity": "10"
+    
+      },
+    
+      {
+    
+        "productDesc": "Engine Oil",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product5.jpg"
+    
+        ],
+    
+        "quantity": "500"
+    
+      },
+    
+      {
+    
+        "productDesc": "Tyres",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product6.jpg"
+    
+        ],
+    
+        "quantity": "38"
+    
+      },
+      {
+    
+        "productDesc": "Tyres",
+    
+        "imageUrls": [
+    
+          "/assets/fakeAssets/product6.jpg"
+    
+        ],
+    
+        "quantity": "38"
+    
+      }
+]

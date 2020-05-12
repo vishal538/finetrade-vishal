@@ -1,0 +1,7 @@
+<app-table-row [dataSource]="users"
+               [displayedColumns]="displayedColumns"
+               [referenceId]="'TenderId'"
+               [iconKeyReference]="'has_relatives'"
+               [renderTemplate]="'relative'"
+               (deleteUser)="deleteUser($event)">
+</app-table-row>

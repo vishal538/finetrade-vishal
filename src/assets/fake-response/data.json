@@ -1,0 +1,168 @@
+[
+    {
+       "data":{
+          "TenderId":"1",
+          "Title":"3Inch PVC Pipes",
+          "Product Name":"PVC Pipes",
+          "Quantity":"650 meters",
+          "Category":"Hardware",
+          "Date Posted":"23 Mar 2020 00:00:00",
+          "Status":"Active"
+       },
+       "kids":{
+          "has_relatives":{
+             "records":[
+                {
+                   "data":{
+                     "BidId":"1007",
+                     "Amount":"34000000",
+                     "Organisation":"Swaraj Pipes and Tools",
+                     "Bid Date":"23 Mar 2020 00:00:00"                   
+                  },
+                   "kids":{
+                      "has_phone":{
+                         "records":[
+                            {
+                               "data":{
+                                  "Phone ID":"2008",
+                                  "ID of the relative":"1007",
+                                  "Phone":"+(179)-982-0570"
+                               },
+                               "kids":{
+ 
+                               }
+                            }
+                         ]
+                      }
+                   }
+                }
+             ]
+          }
+       }
+    },
+    {
+      "data":{
+         "TenderId":"4",
+         "Title":"3Inch PVC Pipes",
+         "Product Name":"Adhesives",
+         "Quantity":"650 Litre",
+         "Category":"Hardware",
+         "Date Posted":"23 Mar 2020 00:00:00",
+         "Status":"Active"
+      },
+      "kids":{
+         "has_relatives":{
+            "records":[
+               {
+                  "data":{
+                    "BidId":"1002",
+                    "Amount":"34000000",
+                    "Organisation":"Swaraj Pipes and Tools",
+                    "Bid Date":"23 Mar 2020 00:00:00"                   
+                 },
+                  "kids":{
+                     "has_phone":{
+                        "records":[
+                           {
+                              "data":{
+                                 "Phone ID":"2008",
+                                 "ID of the relative":"1007",
+                                 "Phone":"+(179)-982-0570"
+                              },
+                              "kids":{
+
+                              }
+                           }
+                        ]
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   },
+   {
+      "data":{
+         "TenderId":"3",
+         "Title":"3Inch PVC Pipes",
+         "Product Name":"Threads",
+         "Quantity":"2 Kg",
+         "Category":"Textile",
+         "Date Posted":"23 Mar 2020 00:00:00",
+         "Status":"Active"
+      },
+      "kids":{
+         "has_relatives":{
+            "records":[
+               {
+                  "data":{
+                    "BidId":"1000",
+                    "Amount":"34000000",
+                    "Organisation":"Swaraj Pipes and Tools",
+                    "Bid Date":"23 Mar 2020 00:00:00"                   
+                 },
+                  "kids":{
+                     "has_phone":{
+                        "records":[
+                           {
+                              "data":{
+                                 "Phone ID":"2008",
+                                 "ID of the relative":"1007",
+                                 "Phone":"+(179)-982-0570"
+                              },
+                              "kids":{
+
+                              }
+                           }
+                        ]
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   },
+    
+    {
+      "data":{
+         "TenderId":"2",
+          "Title":"Laptop",
+          "Product Name":"Hp",
+          "Quantity":"20",
+          "Category":"Hardware",
+          "Date Posted":"23 Mar 2020 00:00:00",
+          "Status":"Active"
+      },
+      "kids":{
+         "has_relatives":{
+            "records":[
+               {
+                  "data":{
+                     "BidId":"1005",
+                     "Amount":"64000000",
+                     "Organisation":"Dell ",
+                     "Bid Date":"23 Mar 2020 00:00:00"  
+                  },
+                  "kids":{
+                     "has_phone":{
+                        "records":[
+                           {
+                              "data":{
+                                 "Phone ID":"2008",
+                                 "ID of the relative":"1007",
+                                 "Phone":"+(179)-982-0570"
+                              },
+                              "kids":{
+
+                              }
+                           }
+                        ]
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   }
+    
+]

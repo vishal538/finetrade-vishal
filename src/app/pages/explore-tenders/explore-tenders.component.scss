@@ -1,0 +1,43 @@
+Sup{
+    margin-left: 10.7rem;
+    // line-height: 2rem ; 
+    display:inline-block;
+    color: limegreen;
+
+}
+.bid-count{
+    font-size: 1rem;
+    color: blueviolet;
+}
+.best{
+    margin-bottom: -1rem;
+}
+.btn{
+        color: white;
+        width: 80%;
+}
+.btn:hover{
+    color: white;
+    width: 80%;
+    font-weight: 600;
+}
+
+.nb-card-body{
+    box-shadow: red($color: #000000);
+}
+h5{
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+    font-weight: 200;
+    font-family:sans-serif;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+nb-card-header{
+    border-bottom: 0px;
+}
+pagination-controls{
+    text-align: center;
+}

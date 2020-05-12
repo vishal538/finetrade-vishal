@@ -1,0 +1,157 @@
+.parent{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: -1.5rem;
+   
+}
+.card{
+    flex-grow: 0.6;
+    
+}
+.card-col{
+    flex-grow: 0.2;
+}
+.child{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0rem;
+}
+li{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.parent2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding:5px;
+}
+.text{
+    padding-right: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    color:grey;
+}
+nb-select{
+    width:200px;
+   background-color: white;
+}
+.details{
+    font-weight: 700;
+    color:grey;
+}
+
+.head{
+    flex: 1;
+    color:rgba(0, 0, 0, 0.767);
+    font-weight: 600;
+    margin-inline-start: 1rem;
+}
+.child2{
+    display: flex;
+    justify-content: space-between;
+}
+.child3{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    border-bottom: 1px  solid rgba(0, 0, 0, 0.137);
+    padding-bottom: 1rem;
+}
+.child4{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+span{
+    color: rgba(15, 97, 15, 0.979);
+    font-size: 12px;
+    font-weight:600;
+    
+}
+.save{
+   border-color: white;
+   background: white;
+   box-shadow: 0rem;
+   font-weight: 700;
+   border: none;
+   margin-top: 1.2rem;
+   color:rgba(0, 0, 0, 0.767);
+}
+.remove{
+    border-color: white;
+    background: white;
+    box-shadow: 0rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 0.7rem;
+    color:rgba(0, 0, 0, 0.767);
+ }
+.list{
+    border-style: 1px solid;
+}
+.btn{
+    border: 0.5px solid rgba(0, 0, 0, 0.767);
+    border-radius: 2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    font-weight: 700;
+
+}
+input{
+    width: 3.1rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    text-align: center;
+    border: 0.5 solid rgba(0, 0, 0, 0.767);
+}
+.amount{
+    font-size: 12px;
+    font-weight:600;
+    color: grey;
+    padding-top: -0.5rem;
+}
+.name{
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.767);
+}
+.price{
+    font-weight: 700;
+}
+.set{
+    font-size: 12px;
+    font-weight: 600;
+}
+nb-card-footer{
+    text-align: end;
+}
+.total{
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.767);
+}
+.amt{
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.767);
+}
+del{
+    font-weight: 100;
+}
+.placeorder{
+    width:200px;
+}
+nb-card-body nb-theme.foot{
+    padding-bottom: -3rem;
+}
+.icon{
+    width:120px;
+    height:150px;
+}
+.bttn{
+    align-items:flex-end;
+}

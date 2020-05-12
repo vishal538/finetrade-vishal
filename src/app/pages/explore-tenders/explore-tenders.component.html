@@ -1,0 +1,32 @@
+<div class="container">
+<nb-card *ngFor="let card of cards | paginate: { itemsPerPage:itemsPerPage, currentPage: p}; let i=index;">
+  <nb-card-header>
+    <p>{{card.title}}</p>
+  </nb-card-header>
+    <nb-card-body >
+        <div class="row" >
+        <div class="col-lg-6">
+        <h1>{{card.heading}} </h1>
+        <div class="best">
+        <sup>{{card.bids}}</sup>
+        </div>
+        </div>
+     <div class="col-lg-4">
+      <div class="address">
+      <h5 class="bid-count">{{card.totalbid}}</h5>
+      <h5>{{card.Qty}}</h5>
+      <h5>{{card.Date}}</h5>
+      <h5>{{card.address}}</h5>
+      <h5>{{card.city}} </h5>
+      </div>
+
+     </div>
+         <div class="col-lg-2">
+           <a href="#" class="btn btn-primary">+Bid</a>
+         </div>
+         </div>
+    </nb-card-body>  
+  </nb-card>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+ 

@@ -1,0 +1,37 @@
+<nb-card size="large">
+    <nb-card-body>
+        <div class="row">
+            <ng-container *ngIf="certificates.length === 0">
+                <div class="child1">
+                    Add to Certificates & Awards
+                </div>
+            </ng-container>
+            <ng-container *ngIf="certificates.length !== 0">
+                <div class="box col-lg-2 col-sm-6 col-md-4"
+                *ngFor="let certificate of certificates">
+                    <div class="title pr-2 pt-1">
+                        <!-- <div>
+                            <nb-icon icon="edit-outline" class="grey-7"></nb-icon>
+                        </div> -->
+                        <div>
+                            <nb-icon icon="trash-2-outline" class="grey-7" (click)="removeFile(certificate.fileUrl)"></nb-icon>
+                        </div>
+                    </div>
+                    <div class="tn">
+                        <div class="image">
+                            <img class="icon" src={{certificate.fileUrl}}>
+                        </div>
+                        <div class="titles">
+                            {{certificate.fileTitle}}
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div>
+            <label class="upload-btn">Add File
+                <input type="file" nbButton status="warning" ng2FileSelect [uploader]="uploader" multiple />
+            </label>
+        </div>
+    </nb-card-body>
+</nb-card>

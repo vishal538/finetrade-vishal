@@ -1,0 +1,19 @@
+<div class="flex-container flex-wrap space-around">
+    <div class="row">
+    <div class="col-lg-4 col-sm-12 col-md-6" *ngFor="let seller of sellerdashboards">  
+    <nb-card class="flex-equi-content" size="tiny">
+        <nb-card-body>
+            <img class="icon" src={{seller.imageUrls}}>
+        </nb-card-body>
+        <nb-card-footer>
+            <div>
+                {{seller.productDesc}}
+            </div>
+            <div>
+                Qty: {{seller.quantity}}
+            </div>
+        </nb-card-footer>
+    </nb-card>
+</div>
+</div>
+</div>

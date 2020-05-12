@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-lg-12">
+        <nb-card>
+            <nb-card-header>Add Product</nb-card-header>
+                <nb-card-body>
+                    <div class="full-name-inputs">
+                        <textarea rows="1" nbInput fullWidth shape="round"  placeholder="Title" formControlName="title"></textarea>
+                    </div>
+
+                    <div class="full-name-inputs">
+                        <input type="text" nbInput fullWidth shape="round" placeholder="Size" formControlName="Size">
+                        <nb-select placeholder="Unit" fullWidth formControlName="unit">
+                            <nb-option *ngFor="let unitOption of unitOfMeasurementOptions" [value]="unitOption">{{unitOption}}</nb-option>
+                        </nb-select>
+                    </div>
+
+                    <div class="full-name-inputs">
+                            <input type="text" nbInput fullWidth shape="round" placeholder="Product Code" formControlName="ProductCode">
+                            <input type="text" nbInput fullWidth shape="round" placeholder="Available Quantity" formControlName="AvailableQuantity">
+                           
+                    </div>
+
+                    <div class="full-name-inputs">
+                        <textarea rows="5" nbInput fullWidth shape="round"  placeholder="Remark" formControlName="Remark"></textarea>
+                    </div>
+
+                    <div class="full-name-inputs">
+                        <div class="col-md-6  upload-btn-wrapper">
+                            <img [src]="URL" class="btn" width="150" height="100" alt="">
+                           
+                          <input type="file" (change)="selectImage($event)" />
+                         
+                        </div>  
+                        
+
+                        <div class="col-md-6  upload-btn-wrapper">
+                                <img [src]="url" class="btn" width="150" height="100" alt="">
+                            <input type="file" (change)="selectFile($event)">
+                        </div>
+                    </div>
+
+                    <div class="full-name-inputs">
+                        <!-- <div class="col-md-6">
+                            <nb-select placeholder="Category" fullWidth formControlName="Category">
+                                <nb-option *ngFor="let unitOption of unitOfMeasurementOptions" [value]="unitOption">{{unitOption}}</nb-option>
+                            </nb-select>
+                        </div> -->
+                        <div class="col-md-6">
+                            <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems" class="select"
+                            [settings]="dropdownSettings" 
+                            (onSelect)="onItemSelect($event)" 
+                            (onDeSelect)="OnItemDeSelect($event)"
+                            (onSelectAll)="onSelectAll($event)"
+                            (onDeSelectAll)="onDeSelectAll($event)"></angular2-multiselect>
+                        </div>
+
+                        <div class="col-md-6">
+                            <angular2-multiselect class="select" [data]="dropList" [(ngModel)]="choosenItems" class="select"
+                            [settings]="dropSettings" 
+                            (onSelect)="onOptionSelect($event)" 
+                            (onDeSelect)="OnOptionDeSelect($event)"
+                            (onSelectAll)="onSelectingAll($event)"
+                            (onDeSelectAll)="onDeSelectingAll($event)"></angular2-multiselect>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-9 pl-5">
+                          <button nbButton status="warning">Add Product</button>
+                        </div>
+                      </div>
+                    
+                </nb-card-body>
+        </nb-card>
+    </div>
+</div>

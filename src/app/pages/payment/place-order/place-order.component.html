@@ -1,0 +1,108 @@
+<nb-accordion>
+    <nb-accordion-item expanded="true">
+      <nb-accordion-item-header>
+        Net Banking
+      </nb-accordion-item-header>
+      <nb-accordion-item-body>
+
+        <p>Popular Banks</p>
+          <div class="row">
+              <div class="col-md-4">
+                <nb-radio-group [(ngModel)]="option" >
+                    <nb-radio> <img src="/assets/images/hdfc.jpg"  class="icon">HDFC Bank</nb-radio>
+                    
+                 </nb-radio-group>
+              </div>
+
+              <div class="col-md-4">
+                <nb-radio-group [(ngModel)]="option" >
+                    <nb-radio><img src="/assets/images/icici.jpg" class="icon">ICICI Bank</nb-radio>
+                    
+                  </nb-radio-group>
+              </div>
+              <div class="col-md-4">
+                <nb-radio-group [(ngModel)]="option" >
+                    <nb-radio><img src="/assets/images/sbi.png" class="icon">State Bank Of India </nb-radio>
+                    
+                  </nb-radio-group>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <nb-radio-group [(ngModel)]="option" >
+                  <nb-radio> <img src="/assets/images/axis_bank.jpg" class="icon"> AXIS Bank</nb-radio>
+                  
+                </nb-radio-group>
+            </div>
+
+            <div class="col-md-4">
+              <nb-radio-group [(ngModel)]="option" >
+                  <nb-radio> <img src="/assets/images/kotak.jpg" class="icon"> Kotak Bank</nb-radio>
+                  
+                </nb-radio-group>
+            </div>
+            </div>
+
+            <p>Other Banks</p>
+
+            <nb-select  filled status="white" class="drop" placeholder="--Select Bank--">
+                <nb-option value="">Option empty</nb-option>
+                <nb-option value="0">Option 0</nb-option>
+                <nb-option value="1">Option 1</nb-option>
+                <nb-option value="2">Option 2</nb-option>
+                <nb-option value="3">Option 3</nb-option>
+                <nb-option value="4">Option 4</nb-option>
+            </nb-select>
+            <div class="top">
+                <button class="pay" type="submit" nbButton status="warning" >PAY</button>
+            </div>
+
+      </nb-accordion-item-body>
+    </nb-accordion-item>
+
+    
+    <nb-accordion-item>
+      <nb-accordion-item-header>
+     Credit/Debit/Atm Card
+      </nb-accordion-item-header>
+      <nb-accordion-item-body>
+         <div class="row"> 
+        <div class=" col top">
+            <input type="text" class="card" nbInput  shape="rectangle" placeholder="Enter Card Number">
+        </div>
+    </div>
+        <div class=" row ">
+            <div class="col-6 line top">
+            
+                <span>Valid Thru:</span>
+                
+                <nb-select  filled class="select" status="white"  placeholder="MM">
+                    <nb-option value="">01</nb-option>
+                    <nb-option value="0">02</nb-option>
+                    <nb-option value="1">03</nb-option>
+                    <nb-option value="2">11</nb-option>
+                    <nb-option value="3">11</nb-option>
+                    <nb-option value="4">11</nb-option>
+                </nb-select>
+                /
+                <nb-select  filled class="select" status="white"  placeholder="YY">
+                    <nb-option value="">2020</nb-option>
+                    <nb-option value="0">2021</nb-option>
+                    <nb-option value="1">2022</nb-option>
+                    <nb-option value="2">2023</nb-option>
+                    <nb-option value="3">2024</nb-option>
+                    <nb-option value="4">2025</nb-option>
+                </nb-select>
+            
+            </div>
+            <div class="col-6 line top">
+                <input type="password" nbInput  class="cvv" shape="rectangle" placeholder="CVV">
+            </div>
+            <div class="col top">
+                <button class="pay" type="submit" nbButton status="warning" >PAY</button>
+            </div>
+        </div>
+        
+      </nb-accordion-item-body>
+    </nb-accordion-item>
+    </nb-accordion>

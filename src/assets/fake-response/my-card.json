@@ -1,0 +1,15 @@
+[
+    {
+       "Name": "Platinum Plan",
+       "Quantity":"1",
+       "seller":"Seller: Finetrade",
+       "Delivery":"Immidiate",
+       "Price":"700",
+       "Save":"SAVE FOR LATER",
+       "Remove":"REMOVE",
+       "Img":"./assets/icon-img.png",
+       "Subtract":"-",
+       "Add":"+",
+       "count":1
+    }
+]

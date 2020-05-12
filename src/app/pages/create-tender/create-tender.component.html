@@ -1,0 +1,322 @@
+<!-- <mat-card class="contain">
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm()">
+    <div class="row">
+      <div class="col-6 ">
+        <mat-form-field class="text">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="title" />
+          <mat-error>
+            <span *ngIf="!registerForm.get('title').valid && registerForm.get('title').touched">Enter Title</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-6"></div>
+    </div>
+    <div class="row">
+      <div class="col-6 ">
+
+        <mat-form-field class="text">
+          <mat-label>Product Name</mat-label>
+          <input matInput formControlName="productname" />
+          <mat-error>
+            <span *ngIf="!registerForm.get('productname').valid && registerForm.get('productname').touched">Enter
+              Product</span>
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+      <div class="col-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 ">
+
+        <mat-form-field class="text">
+          <mat-label>Quantity</mat-label>
+          <input matInput formControlName="quantity" />
+          <mat-error>
+            <span *ngIf="!registerForm.get('quantity').valid && registerForm.get('quantity').touched">Enter
+              Quantity</span>
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+
+      <div class="col-6">
+
+        <mat-form-field>
+          <mat-label>unit of measurement</mat-label>
+          <mat-select matNativeControl formControlName="unit" required>
+            <mat-option *ngFor="let options of unit" [value]="unit">{{options}}</mat-option>
+
+          </mat-select>
+          <mat-error>
+            <span *ngIf="!registerForm.get('unit').valid && registerForm.get('unit').touched">Select Unit</span>
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+
+        <mat-form-field>
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category" required>
+
+            <mat-option *ngFor="let cat of  category" [value]="category">{{cat}}</mat-option>
+          </mat-select>
+          <mat-error>
+            <span *ngIf="!registerForm.get('category').valid && registerForm.get('category').touched">Select
+              Category</span>
+          </mat-error>
+        </mat-form-field>
+
+      </div>
+      <div class="col-6"></div>
+    </div>
+    <div>
+      <div>
+        <p>Delievery Address</p>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <mat-form-field class="text">
+            <mat-label>Line 1</mat-label>
+            <input matInput placeholder="" formControlName="line1" />
+            <mat-error>
+              <span *ngIf="!registerForm.get('line1').valid && registerForm.get('line1').touched">Enter Line 1</span>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+        <div class="col-6">
+
+          <mat-form-field class="text">
+            <mat-label>Line 2</mat-label>
+            <input matInput placeholder="" formControlName="line2" />
+            <mat-error>
+              <span *ngIf="!registerForm.get('line2').valid && registerForm.get('line2').touched">Enter Line 2</span>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+
+          <mat-form-field class="text">
+            <mat-label>State</mat-label>
+            <mat-select formControlName="state" required>
+
+              <mat-option *ngFor="let cat of  category" [value]="category">{{cat}}</mat-option>
+            </mat-select>
+            <mat-error>
+              <span *ngIf="!registerForm.get('state').valid && registerForm.get('state').touched">Enter State</span>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+        <div class="col-6">
+
+          <mat-form-field class="text">
+            <mat-label>City</mat-label>
+            <mat-select formControlName="city" required>
+
+              <mat-option *ngFor="let cat of  category" [value]="category">{{cat}}</mat-option>
+            </mat-select>
+            <mat-error>
+              <span *ngIf="!registerForm.get('city').valid && registerForm.get('city').touched">Enter City</span>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+
+          <mat-form-field class="text">
+            <mat-label>PIN</mat-label>
+            <input matInput placeholder="" formControlName="pin" />
+            <mat-error>
+              <span *ngIf="!registerForm.get('pin').valid && registerForm.get('pin').touched">Enter PIN</span>
+            </mat-error>
+          </mat-form-field>
+
+        </div>
+        <div class="col-6">
+          <mat-form-field class="text">
+            <mat-label>Country</mat-label>
+            <mat-select matNativeControl required formControlName="country">
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let con of country" [value]="country">{{con.name}}</mat-option>
+
+            </mat-select>
+            <mat-error>
+              <span *ngIf="!registerForm.get('country').valid && registerForm.get('country').touched">Select
+                Country</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div>Tender Duration</div>
+    <div class="row">
+      <div class="col-6 ">
+
+        <mat-form-field class="text">
+          <mat-label>Start Date</mat-label>
+          <input matInput [matDatepicker]="picker1" formControlName="startdate">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+          <mat-error>
+            <span *ngIf="!registerForm.get('startdate').valid && registerForm.get('startdate').touched">Select Start
+              Date</span>
+          </mat-error>
+
+        </mat-form-field>
+
+      </div>
+      <div class="col-6 ">
+
+        <mat-form-field class="text">
+          <mat-label>End Date</mat-label>
+          <input matInput [matDatepicker]="picker2" formControlName="enddate">
+          <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+
+        </mat-form-field>
+        <mat-error>
+          <span *ngIf="!registerForm.get('enddate').valid && registerForm.get('enddate').touched">Select End Date</span>
+        </mat-error>
+      </div>
+
+    </div>
+    <div>Description</div>
+    <div>
+
+      <mat-form-field class="text">
+        <mat-label></mat-label>
+        <textarea matInput placeholder="" formControlName="description"></textarea>
+        <mat-error>
+          <span *ngIf="!registerForm.get('description').valid && registerForm.get('description').touched">Enter
+            Description</span>
+        </mat-error>
+      </mat-form-field>
+
+    </div>
+
+
+
+  </form>
+
+</mat-card>  -->
+
+<div class="row">
+  <div class="col-lg-12">
+    <nb-card>
+     
+      <nb-card-header>Tender-E-Auction</nb-card-header>
+      <nb-card-body>
+        <form [formGroup]="firstFormGroup" (ngSubmit)="submitData()">
+          <div class="full-name-inputs">
+            <input nbInput type="text" nbInput fullWidth shape="round" placeholder="Title" formControlName="title">
+          </div>
+          <div class="full-name-inputs">
+            <input nbInput type="text" nbInput fullWidth shape="round" placeholder="Product Name" formControlName="productName">
+          </div>
+          <div class="full-name-inputs">
+            <input nbInput type="text" nbInput fullWidth shape="round" placeholder="Quantity" formControlName="quantity">
+          </div>
+
+          <div class="full-name-inputs">
+          
+          <nb-select placeholder="Unit" fullWidth formControlName="unit">
+            <nb-option *ngFor="let unitOption of unitOfMeasurementOptions" [value]="unitOption">{{unitOption}}</nb-option>
+          </nb-select>
+          <nb-select placeholder="Categories" fullWidth formControlName="categories">
+            <nb-option *ngFor="let category of categoriesOptions" [value]="category">{{category}}</nb-option>
+          </nb-select>
+        </div>
+        <h6>Delivery Address </h6>
+        <div class="full-name-inputs">
+        <input type="text" nbInput fullWidth shape="round" placeholder="Line 1" formControlName="line1">
+        <input type="text" nbInput fullWidth shape="round" placeholder="Line 2" formControlName="line2">
+        </div>
+        <div class="full-name-inputs">
+          <nb-select placeholder="State" fullWidth formControlName="state" (selectedChange)="setCityOptions()">
+            <nb-option *ngFor="let state of stateOptions" [value]="objectKeys(state)[0]">{{objectKeys(state)[0]}}</nb-option>
+          </nb-select>
+          <nb-select placeholder="City" fullWidth formControlName="city">
+            <nb-option *ngFor="let city of cityOptions" [value]="city">{{city}}</nb-option>
+          </nb-select>
+        </div>
+        <h6>Tender Duration</h6>
+        <div class="full-name-inputs">
+        <!-- <input type="date" nbInput fullWidth shape="round" placeholder="Rounded border" formControlName="startDate">
+        <input type="date" nbInput fullWidth shape="round" placeholder="Rounded border" formControlName="endDate"> -->
+        <input nbInput fullWidth placeholder="Range Picker" [nbDatepicker]="rangepicker">
+        <nb-rangepicker #rangepicker></nb-rangepicker> 
+      </div>
+      <h6>Get bids from</h6>
+      <div class="full-name-inputs">
+        <angular2-multiselect fullWidth formControlName="openZoneForTender" [data]="restrictedStateZoneOptions" 
+                        [(ngModel)]="selectedRestrictedStateZoneItems" 
+                        [settings]="settings" 
+                        (onSelect)="onItemSelect($event)"
+                        (onDeSelect)="OnItemDeSelect($event)" 
+                        (onSelectAll)="onSelectAll($event)" 
+                        (onDeSelectAll)="onDeSelectAll($event)">
+        </angular2-multiselect>
+      </div>
+      
+      <div class="full-name-inputs">
+        <textarea rows="5" nbInput fullWidth shape="round"  placeholder="Description" formControlName="description"></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <input type="file" ng2FileSelect [uploader]="uploader" multiple  />
+        </div>
+        <div class="col-md-6" style="margin-bottom: 40px">
+          <table class="table-responsive">
+            <div class="table">
+              <thead>        
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Progress</th>
+                    <th scope="col">Actions</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of uploader.queue">
+                      <td><strong>{{ item?.file?.name }}</strong></td>
+                      <td *ngIf="uploader.options.isHTML5" nowrap>{{ item?.file?.size/1024/1024 | number:'.2' }} MB</td>
+                      <td *ngIf="uploader.options.isHTML5">
+                          <div class="progress" style="margin-bottom: 0;">
+                              <div class="progress-bar" role="progressbar" [ngStyle]="{ 'width': item.progress + '%' }"></div>
+                          </div>
+                      </td>
+                     
+                      <td>
+                          <button type="button" class="btn btn-danger btn-xs"
+                                  (click)="item.remove()">
+                              <span class="glyphicon glyphicon-trash"></span> Remove
+                          </button>
+                      </td>
+                  </tr>
+                  </tbody>
+            </div>
+             </table>
+      </div>
+    </div>
+        <div class="form-group row">
+          <div class="offset-sm-3 col-sm-9">
+            <button type="submit" nbButton status="warning">Create Tender</button>
+          </div>
+        </div>  
+      </form>
+      </nb-card-body>
+      
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+nb-card-body {
+    overflow: visible;
+    padding-top: 0;
+  
+    > * {
+      margin-top: 1rem;
+    }
+  }
+
+.full-name-inputs
+ {
+    
+    display: flex;
+    margin: 0 -0.5rem;
+  
+    > * {
+      margin: 0 0.5rem;
+    }
+  }
+
+  input, .full-name-inputs, textarea{
+    margin: 12px; margin: 12px;
+  }
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px dotted rgba(0, 0, 0, 0.281);
+    color:  rgba(0, 0, 0, 0.281);
+    background-color: rgba(255, 255, 255, 0.89);
+    
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+   
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color:  rgba(0, 0, 0, 0.281);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .custom-class{
+    color: #ccc;
+}
+.custom-class .c-token{
+    background: #38d574 !important;
+}
+.custom-class .pure-checkbox label::before {
+    border-color: #38d574 !important;
+}
+.custom-class .pure-checkbox input[type="checkbox"]:checked + label[_ngcontent-c1]:before {
+    background: #38d574 !important;
+}

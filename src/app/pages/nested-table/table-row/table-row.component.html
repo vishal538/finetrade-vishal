@@ -1,0 +1,54 @@
+<div [class.sub-row]="title">
+  <p>{{ title }}</p>
+  <mat-table class="mat-elevation-z8" [dataSource]="dataSource" multiTemplateDataRows>
+
+    <!-- COLUMNS AND ROWS-->
+    <ng-container *ngFor="let key of displayedColumns" [matColumnDef]="key">
+      <mat-header-cell *matHeaderCellDef>{{ key.includes('Icon') ? '' : key }}</mat-header-cell>
+
+      <mat-cell *matCellDef="let element; let i = dataIndex">
+
+        <span *ngIf="(!key.includes('Icon') && !key.includes('Date Posted') && !key.includes('Bid Date')); else icon">{{ element.data[key] }}</span>
+        <span *ngIf="key.includes('Action') then bidAction">{{ element.data[key] }}</span>
+        <span *ngIf="key.includes('Date Posted') || key.includes('Bid Date')">{{ element.data[key] | date:'mediumDate' }}</span>
+
+        <ng-template #bidAction>
+          <button type="text" nbButton size="tiny" status="success">Accept</button>
+        </ng-template>
+
+        <ng-template #icon>
+          <nb-icon icon="arrow-ios-downward" pack="eva" *ngIf="element.kids[iconKeyReference] && key === 'expandIcon'"
+            (click)="toggleExpandableSymbol(element.data[referenceId])">
+          </nb-icon>
+        </ng-template>
+
+      </mat-cell>
+    </ng-container>
+
+    <!-- EXPANDABLE ROW -->
+    <ng-container matColumnDef="expandedDetail">
+      <mat-cell *matCellDef="let element">
+
+        <div *ngIf="element.data[referenceId] === expandedId" class="width-100" [ngSwitch]="renderTemplate">
+
+          <!-- <app-has-phone-table *ngSwitchCase="'phone'"
+                               [phones]="element.kids.has_phone.records"></app-has-phone-table> -->
+
+          <app-relative-table *ngSwitchCase="'relative'" [relatives]="element.kids.has_relatives.records">
+          </app-relative-table>
+
+        </div>
+
+      </mat-cell>
+    </ng-container>
+
+    <!-- -->
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    <mat-row class="expandable-row" *matRowDef="let row; columns: ['expandedDetail'];">
+    </mat-row>
+
+  </mat-table>
+</div>

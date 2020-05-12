@@ -1,0 +1,87 @@
+// nb-card{
+//     width: 100%;
+//     height: 100%;
+// }
+// nb-card-body{
+//     display: flex;
+//     flex-flow: column;
+//     justify-content: start;
+//     align-items: center;
+// }
+input[type="file"]{
+    display: none;
+}
+
+.upload-btn {
+  display: table;
+  border: 1px solid;
+  cursor: pointer;
+  background: orange;
+  padding: 0.8rem 3rem;
+  color: white;
+  border-radius: 8px;
+}
+.title{
+    display: flex;
+   justify-content: flex-end;
+   color: grey;
+   margin-right: -1rem;
+}
+
+.grey-7 {
+  color: #777777;
+}
+
+.box{
+  border: 1px solid #dddddd;
+  max-width: 30%;
+  height: 12rem;
+  margin-right: 0.9rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.9rem;
+  box-shadow: 2px 2px 5px #ddd;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 400px) {
+    .box {
+    border: 1px solid;
+    width: 21rem;
+    height: 20rem;
+    margin-right: 0.5rem;
+    max-width: 8.3rem;
+    height: 12.3rem;
+    margin-left: 0.5rem;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    .box {
+    max-width: 20%;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    .box {
+    max-width: 16%;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    }
+  }
+  img{
+      width: 40%;
+  }
+  .image{
+    text-align: center;
+    padding-top: 2.7rem;
+  }
+  .titles{
+      text-align: center;
+      padding-top: 1.8rem;
+      font-weight: 100;
+  }
+  @media only screen and (min-width: 500px) {
+    .titles {
+        text-align: center;
+    padding-top: 1.4rem;
+}
+    }
+  

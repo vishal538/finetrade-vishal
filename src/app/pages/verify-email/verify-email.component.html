@@ -1,0 +1,13 @@
+<nb-card>
+    <nb-card-header>Please Verify Email</nb-card-header>
+    <nb-card-body>
+    A Verify Link has been Sent
+    to your Email pan*********@gmail.com
+    </nb-card-body>
+    <nb-card-footer>
+      <div  [formGroup]="userVerifyForm">
+         <input nbInput fulllWidth shape="square" placeholder="Email"nbInput type="text" id="email" formControlName="email">
+        <button  nbButton status="warning">Resend Verification Code</button>
+   </div>
+    </nb-card-footer>
+  </nb-card>
